@@ -1,12 +1,47 @@
-# React + Vite
+## 🛠 プロジェクトのセットアップ手順（React + Vite）
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+このプロジェクトは、ReactとViteを使って構築されています。  
+以下の手順に従ってローカル環境で立ち上げることができます。
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### ✅ ステップ1：Node.js が入っているか確認
 
-## Expanding the ESLint configuration
+```bash
+node -v
+npm -v
+```
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Node.js / npm が未インストールの場合は、https://nodejs.org/ja から LTS バージョンをインストールしてください。
+
+### ✅ ステップ2：ViteでReactプロジェクト作成
+
+```bash
+npm create vite@latest
+```
+
+対話形式で以下のような選択肢が出ます：
+
+```pgsql
+✔ Project name: › my-search-app（※ここは好きな名前でOK）
+✔ Select a framework: › React
+✔ Select a variant: › JavaScript（または TypeScript でもOK）
+```
+
+### ✅ ステップ3：依存パッケージをインストール
+
+```bash
+cd my-search-app
+npm install
+```
+
+### ✅ ステップ4：開発サーバーを起動！
+
+```bash
+npm run dev
+```
+
+📝 備考
+Viteは高速なビルド＆開発サーバーを提供するモダンなツールです。
+
+src/App.jsx を編集することで、すぐに開発を始められます。
