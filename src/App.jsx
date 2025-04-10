@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-const API_KEY = 'あなたのAPIキー'; // ← 自分のOpenWeatherMap APIキーをここに入れる！
+const API_KEY = '4fdc84b4fe5b059fe601b386c6862361'; // ← 自分のOpenWeatherMap APIキーをここに入れる！
 
 function App() {
   const [city, setCity] = useState('');
