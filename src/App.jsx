@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-const API_KEY = '4fdc84b4fe5b059fe601b386c6862361';
+const API_KEY = // Replace with your OpenWeatherMap API key;
 
 function App() {
   const [city, setCity] = useState('');
